@@ -19,6 +19,7 @@ import org.apache.commons.io.IOUtils;
 
 public class Email_Sending {
 
+    // sending palne text which will show in email view
     static void sendHTIMLPlaneTextEmial(Session session) {
         try {
             Message message = new MimeMessage(session);
@@ -39,6 +40,7 @@ public class Email_Sending {
         }
     }
 
+    //one time send same message to multiple user
     static void sendMultipleUserPlaneTextEmial(Session session) {
 
         try {
@@ -65,6 +67,7 @@ public class Email_Sending {
         }
     }
 
+    //send html mail to user
     static void sendHTIMLTextEmial(Session session) {
         try {
             Message message = new MimeMessage(session);
@@ -85,6 +88,7 @@ public class Email_Sending {
         }
     }
 
+    // send html page email to user
     static void sendHTIMLFileEmial(Session session) {
         try {
             Message message = new MimeMessage(session);
@@ -107,6 +111,7 @@ public class Email_Sending {
         }
     }
 
+    // send attachment file email
     static void sendAttatchFileEmail(Session session) {
         try {
 
@@ -141,6 +146,7 @@ public class Email_Sending {
         }
     }
 
+    //send image attatchment file 
     static void sendAttatchFileWithImageEmail(Session session) {
         try {
 
@@ -186,6 +192,7 @@ public class Email_Sending {
         }
     }
 
+    // send image file
     static void sendImageFileEmail(Session session) {
         try {
 
